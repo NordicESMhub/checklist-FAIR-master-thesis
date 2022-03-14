@@ -208,6 +208,11 @@ const thebe_selector_output = ".output, .cell_output"
    Add link to checklist in output
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-link-to-github-repository-for-updating-research-object">
+   Add link to github repository for updating Research Object
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -236,6 +241,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-link-to-checklist-in-output">
    Add link to checklist in output
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-link-to-github-repository-for-updating-research-object">
+   Add link to github repository for updating Research Object
   </a>
  </li>
 </ul>
@@ -1262,6 +1272,53 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource was successfully created with id = 0e6b6ee6-a8dc-4341-a77f-bd7c3fa6da80
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-link-to-github-repository-for-updating-research-object">
+<h2>Add link to github repository for updating Research Object<a class="headerlink" href="#add-link-to-github-repository-for-updating-research-object" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res_file_url</span> <span class="o">=</span> <span class="s1">&#39;https://github.com/NordicESMhub/checklist-FAIR-master-thesis&#39;</span>
+<span class="n">res_type</span> <span class="o">=</span> <span class="s2">&quot;Jupyter Notebook&quot;</span>
+<span class="n">res_title</span> <span class="o">=</span> <span class="s2">&quot;Jupyter Notebook updating this Research Object with ROHub-API Python package&quot;</span>
+<span class="n">res_description</span><span class="o">=</span><span class="s2">&quot;Update Research Object for aggregating all the resources we use and generated for creating a checklist for master students&quot;</span>
+<span class="n">res_folder</span><span class="o">=</span><span class="s1">&#39;tool&#39;</span>
+
+<span class="nb">id</span> <span class="o">=</span> <span class="n">ro</span><span class="o">.</span><span class="n">add_external_resource</span><span class="p">(</span><span class="n">res_type</span><span class="o">=</span><span class="n">res_type</span><span class="p">,</span> <span class="n">input_url</span><span class="o">=</span><span class="n">res_file_url</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">res_title</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">res_description</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">res_folder</span><span class="p">)</span>
+<span class="nb">id</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource was successfully created with id = 822bdaa1-654c-457f-936d-ee1d590427bf
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource(identifier=822bdaa1-654c-457f-936d-ee1d590427bf, post_request=False)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res_file_url</span> <span class="o">=</span> <span class="s1">&#39;https://nordicesmhub.github.io/checklist-FAIR-master-thesis/&#39;</span>
+<span class="n">res_type</span> <span class="o">=</span> <span class="s2">&quot;Other&quot;</span>
+<span class="n">res_title</span> <span class="o">=</span> <span class="s2">&quot;Online rendered Jupyter Notebook updating this Research Object with ROHub-API Python package&quot;</span>
+<span class="n">res_description</span><span class="o">=</span><span class="s2">&quot;The rendered version of the Jupyter book is automatically rendered with jupyter-book and published in github pages gh-pages&quot;</span>
+<span class="n">res_folder</span><span class="o">=</span><span class="s1">&#39;tool&#39;</span>
+
+<span class="nb">id</span> <span class="o">=</span> <span class="n">ro</span><span class="o">.</span><span class="n">add_external_resource</span><span class="p">(</span><span class="n">res_type</span><span class="o">=</span><span class="n">res_type</span><span class="p">,</span> <span class="n">input_url</span><span class="o">=</span><span class="n">res_file_url</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">res_title</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">res_description</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">res_folder</span><span class="p">)</span>
+<span class="nb">id</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource was successfully created with id = 592004b6-1385-4e96-8bbc-9f7e73a72940
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource(identifier=592004b6-1385-4e96-8bbc-9f7e73a72940, post_request=False)
 </pre></div>
 </div>
 </div>
