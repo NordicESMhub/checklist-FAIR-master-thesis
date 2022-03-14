@@ -213,6 +213,11 @@ const thebe_selector_output = ".output, .cell_output"
    Add link to github repository for updating Research Object
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-link-to-template-for-master-thesis-research-object">
+   Add link to Template for Master thesis Research Object
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -246,6 +251,11 @@ const thebe_selector_output = ".output, .cell_output"
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-link-to-github-repository-for-updating-research-object">
    Add link to github repository for updating Research Object
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-link-to-template-for-master-thesis-research-object">
+   Add link to Template for Master thesis Research Object
   </a>
  </li>
 </ul>
@@ -1319,6 +1329,31 @@ Note: you may need to restart the kernel to use updated packages.
 </pre></div>
 </div>
 <div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource(identifier=592004b6-1385-4e96-8bbc-9f7e73a72940, post_request=False)
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-link-to-template-for-master-thesis-research-object">
+<h2>Add link to Template for Master thesis Research Object<a class="headerlink" href="#add-link-to-template-for-master-thesis-research-object" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">res_file_url</span> <span class="o">=</span> <span class="s1">&#39;https://w3id.org/ro-id/4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;</span>
+<span class="n">res_type</span> <span class="o">=</span> <span class="s2">&quot;Research Object&quot;</span>
+<span class="n">res_title</span> <span class="o">=</span> <span class="s2">&quot;Template Research Object for Master students&quot;</span>
+<span class="n">res_description</span><span class="o">=</span><span class="s2">&quot;This research object is the one created step by step in the videos and aimed at showing master students on how to create a FAIR digital Research Object for their master thesis.&quot;</span>
+<span class="n">res_folder</span><span class="o">=</span><span class="s1">&#39;input&#39;</span>
+
+<span class="nb">id</span> <span class="o">=</span> <span class="n">ro</span><span class="o">.</span><span class="n">add_external_resource</span><span class="p">(</span><span class="n">res_type</span><span class="o">=</span><span class="n">res_type</span><span class="p">,</span> <span class="n">input_url</span><span class="o">=</span><span class="n">res_file_url</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="n">res_title</span><span class="p">,</span> <span class="n">description</span><span class="o">=</span><span class="n">res_description</span><span class="p">,</span> <span class="n">folder</span><span class="o">=</span><span class="n">res_folder</span><span class="p">)</span>
+<span class="nb">id</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource was successfully created with id = faf744f0-63dc-4236-b24f-e7eb531b5439
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Resource(identifier=faf744f0-63dc-4236-b24f-e7eb531b5439, post_request=False)
 </pre></div>
 </div>
 </div>
