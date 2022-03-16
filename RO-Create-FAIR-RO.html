@@ -202,6 +202,18 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#update-the-research-object">
    Update the Research Object
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-collaborators">
+     Add collaborators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-a-license">
+     Add a license
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-link-to-checklist-in-output">
@@ -247,6 +259,18 @@ const thebe_selector_output = ".output, .cell_output"
   <a class="reference internal nav-link" href="#update-the-research-object">
    Update the Research Object
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-collaborators">
+     Add collaborators
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-a-license">
+     Add a license
+    </a>
+   </li>
+  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#add-link-to-checklist-in-output">
@@ -374,7 +398,7 @@ Note: you may need to restart the kernel to use updated packages.
  &#39;created&#39;: &#39;2022-03-14T08:40:25.547148Z&#39;,
  &#39;creator&#39;: &#39;annefou@geo.uio.no&#39;,
  &#39;modificator&#39;: &#39;annefou@geo.uio.no&#39;,
- &#39;modified&#39;: &#39;2022-03-14T08:46:43.902792Z&#39;,
+ &#39;modified&#39;: &#39;2022-03-15T08:02:27.146773Z&#39;,
  &#39;importer&#39;: None,
  &#39;research_areas&#39;: [&#39;Applied sciences&#39;],
  &#39;owner&#39;: &#39;annefou@geo.uio.no&#39;,
@@ -384,8 +408,8 @@ Note: you may need to restart the kernel to use updated packages.
  &#39;number_of_ratings&#39;: 0,
  &#39;number_of_likes&#39;: 0,
  &#39;number_of_dislikes&#39;: 0,
- &#39;quality&#39;: 0,
- &#39;size&#39;: 4832,
+ &#39;quality&#39;: 85,
+ &#39;size&#39;: 15010,
  &#39;creation_mode&#39;: &#39;MANUAL&#39;,
  &#39;doi&#39;: None,
  &#39;api_link&#39;: &#39;https://api.rohub.org/api/ros/778cc738-23d4-42f5-aa5c-2b2b9e3c51dc/&#39;}
@@ -397,7 +421,7 @@ Note: you may need to restart the kernel to use updated packages.
 <h2>Update the Research Object<a class="headerlink" href="#update-the-research-object" title="Permalink to this headline">¶</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">organizations</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">organizations_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Oslo&quot;</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">organizations</span> <span class="o">=</span> <span class="n">rohub</span><span class="o">.</span><span class="n">organizations_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Oslo&quot;</span><span class="p">)</span>
 <span class="n">organizations</span>
 </pre></div>
 </div>
@@ -455,6 +479,15 @@ Note: you may need to restart the kernel to use updated packages.
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">uio_org</span> <span class="o">=</span> <span class="n">organizations</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;organization_id&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">### Add Publisher to RO</span>
+
+<span class="o">-</span> <span class="n">A</span> <span class="n">publisher</span> <span class="ow">is</span> <span class="n">an</span> <span class="n">institution</span><span class="p">,</span> <span class="n">company</span> <span class="ow">or</span> <span class="n">a</span> <span class="n">person</span> <span class="n">that</span> <span class="n">prepares</span> <span class="ow">and</span> <span class="n">issues</span> <span class="n">books</span><span class="p">,</span> <span class="n">journals</span><span class="p">,</span> <span class="n">videos</span><span class="p">,</span> <span class="n">research</span> <span class="n">objects</span><span class="p">,</span> <span class="n">etc</span><span class="o">.</span>
 </pre></div>
 </div>
 </div>
@@ -627,6 +660,204 @@ Note: you may need to restart the kernel to use updated packages.
 </div>
 </div>
 </div>
+<div class="section" id="add-collaborators">
+<h3>Add collaborators<a class="headerlink" href="#add-collaborators" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Jacob&quot;</span><span class="p">)</span>
+<span class="n">user_id_jacob</span><span class="o">=</span><span class="n">usernames</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;username&quot;</span><span class="p">]</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>username</th>
+      <th>display_name</th>
+      <th>affiliation</th>
+      <th>description</th>
+      <th>areas_of_interest</th>
+      <th>orcid_identifier</th>
+      <th>external</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2a8154f8-0c26-4040-8ec4-ec05303c7c56</td>
+      <td>jaqska@gmail.com</td>
+      <td>Jacob Skavang</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Astrid&quot;</span><span class="p">)</span>
+<span class="n">user_id_astrid</span><span class="o">=</span><span class="n">usernames</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;username&quot;</span><span class="p">]</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>username</th>
+      <th>display_name</th>
+      <th>affiliation</th>
+      <th>description</th>
+      <th>areas_of_interest</th>
+      <th>orcid_identifier</th>
+      <th>external</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>613ac541-c634-4a15-b537-cc5ed8f9e82a</td>
+      <td>astridbgj@gmail.com</td>
+      <td>Astrid Bragstad Gjelsvik</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Karen&quot;</span><span class="p">)</span>
+<span class="n">user_id_karen</span><span class="o">=</span><span class="n">usernames</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="s2">&quot;username&quot;</span><span class="p">]</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>username</th>
+      <th>display_name</th>
+      <th>affiliation</th>
+      <th>description</th>
+      <th>areas_of_interest</th>
+      <th>orcid_identifier</th>
+      <th>external</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>dff4cd2c-8c42-4db3-85cc-c7ec3924ca2c</td>
+      <td>ka.2301@hotmail.com</td>
+      <td>karen Ervik</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>None</td>
+      <td>False</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">set_contributors</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="p">[</span><span class="n">user_id_jacob</span><span class="p">,</span> <span class="n">user_id_astrid</span><span class="p">,</span> <span class="n">user_id_karen</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Agent: jaqska@gmail.com recognized in the system.
+Agent: astridbgj@gmail.com recognized in the system.
+Agent: ka.2301@hotmail.com recognized in the system.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;identifier&#39;: &#39;2a8154f8-0c26-4040-8ec4-ec05303c7c56&#39;,
+  &#39;username&#39;: &#39;jaqska@gmail.com&#39;,
+  &#39;name&#39;: &#39;jaqska@gmail.com&#39;,
+  &#39;type&#39;: &#39;RohubUser&#39;,
+  &#39;order&#39;: 0,
+  &#39;display_name&#39;: &#39;Jacob Skavang&#39;},
+ {&#39;identifier&#39;: &#39;613ac541-c634-4a15-b537-cc5ed8f9e82a&#39;,
+  &#39;username&#39;: &#39;astridbgj@gmail.com&#39;,
+  &#39;name&#39;: &#39;astridbgj@gmail.com&#39;,
+  &#39;type&#39;: &#39;RohubUser&#39;,
+  &#39;order&#39;: 1,
+  &#39;display_name&#39;: &#39;Astrid Bragstad Gjelsvik&#39;},
+ {&#39;identifier&#39;: &#39;dff4cd2c-8c42-4db3-85cc-c7ec3924ca2c&#39;,
+  &#39;username&#39;: &#39;ka.2301@hotmail.com&#39;,
+  &#39;name&#39;: &#39;ka.2301@hotmail.com&#39;,
+  &#39;type&#39;: &#39;RohubUser&#39;,
+  &#39;order&#39;: 2,
+  &#39;display_name&#39;: &#39;karen Ervik&#39;}]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-a-license">
+<h3>Add a license<a class="headerlink" href="#add-a-license" title="Permalink to this headline">¶</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">license</span> <span class="o">=</span><span class="s1">&#39;CC-BY-4.0&#39;</span>
@@ -1252,6 +1483,7 @@ Note: you may need to restart the kernel to use updated packages.
   </tbody>
 </table>
 </div></div></div>
+</div>
 </div>
 </div>
 <div class="section" id="add-link-to-checklist-in-output">
