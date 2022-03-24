@@ -1,0 +1,1422 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adding all the administrative information relative to your Research Object &#8212; checklist-ro</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">checklist-ro</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="RO-Create-FAIR-RO.html">
+   Research Object aggregating all resources needed for defining a checklist for Master student FAIR Master thesis
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Login-ROHub.html">
+   Learn to login to ROHub within your Jupyter Notebook and  ROHub-API Python package
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/Adding-administrative-information.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/NordicESMHub/checklist-ro"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/NordicESMHub/checklist-ro/issues/new?title=Issue%20on%20page%20%2FAdding-administrative-information.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/NordicESMHub/checklist-ro/main?urlpath=tree/docs/Adding-administrative-information.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#below-make-sure-to-replace-by-your-own-research-object-identifier">
+   Below, make sure to replace by your own Research Object Identifier
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update-the-research-object">
+   Update the Research Object
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-publisher-to-ro">
+     Add Publisher to RO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-copyright-holders-to-ro">
+     Add Copyright holders to RO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-your-supervisors-as-contributors">
+     Add your supervisors as contributors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-a-license">
+     Add a license
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-geometry">
+   Add Geometry
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-geojson-of-your-geographical-area">
+     Get geojson of your geographical area
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Adding all the administrative information relative to your Research Object</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#below-make-sure-to-replace-by-your-own-research-object-identifier">
+   Below, make sure to replace by your own Research Object Identifier
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update-the-research-object">
+   Update the Research Object
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-publisher-to-ro">
+     Add Publisher to RO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-copyright-holders-to-ro">
+     Add Copyright holders to RO
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-your-supervisors-as-contributors">
+     Add your supervisors as contributors
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-a-license">
+     Add a license
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#add-geometry">
+   Add Geometry
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#get-geojson-of-your-geographical-area">
+     Get geojson of your geographical area
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="adding-all-the-administrative-information-relative-to-your-research-object">
+<h1>Adding all the administrative information relative to your Research Object<a class="headerlink" href="#adding-all-the-administrative-information-relative-to-your-research-object" title="Permalink to this headline">¶</a></h1>
+<p><svg version="1.1" width="16" height="16" class="octicon octicon-tag" viewBox="0 0 16 16" aria-hidden="true"><path fill-rule="evenodd" d="M2.5 7.775V2.75a.25.25 0 01.25-.25h5.025a.25.25 0 01.177.073l6.25 6.25a.25.25 0 010 .354l-5.025 5.025a.25.25 0 01-.354 0l-6.25-6.25a.25.25 0 01-.073-.177zm-1.5 0V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 010 2.474l-5.026 5.026a1.75 1.75 0 01-2.474 0l-6.25-6.25A1.75 1.75 0 011 7.775zM6 5a1 1 0 100 2 1 1 0 000-2z"></path></svg>
+<span class="sphinx-bs badge">FAIR-checklist</span>
+<span class="sphinx-bs badge">training</span></p>
+<p><a class="reference external" href="https://w3id.org/ro-id/4a7315ba-326c-402b-b2c9-f3667357b0bc"><img alt="RoHub - FAIR Executable Research Object" src="https://img.shields.io/badge/RoHub-FAIR_Service_Centric_Research_Object-2ea44f?logo=Open+Access&amp;logoColor=blue" /></a></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pip</span> <span class="n">install</span> <span class="n">rohub</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting rohub
+  Downloading rohub-1.0.5.post1.tar.gz (39 kB)
+  Installing build dependencies ... ?25ldone
+?25h  Getting requirements to build wheel ... ?25ldone
+?25h    Preparing wheel metadata ... ?25ldone
+?25hRequirement already satisfied: requests in /opt/conda/lib/python3.8/site-packages (from rohub) (2.25.1)
+Requirement already satisfied: pandas in /opt/conda/lib/python3.8/site-packages (from rohub) (1.2.4)
+Requirement already satisfied: python-dateutil&gt;=2.7.3 in /opt/conda/lib/python3.8/site-packages (from pandas-&gt;rohub) (2.8.1)
+Requirement already satisfied: pytz&gt;=2017.3 in /opt/conda/lib/python3.8/site-packages (from pandas-&gt;rohub) (2021.1)
+Requirement already satisfied: numpy&gt;=1.16.5 in /opt/conda/lib/python3.8/site-packages (from pandas-&gt;rohub) (1.19.5)
+Requirement already satisfied: six&gt;=1.5 in /opt/conda/lib/python3.8/site-packages (from python-dateutil&gt;=2.7.3-&gt;pandas-&gt;rohub) (1.15.0)
+Requirement already satisfied: chardet&lt;5,&gt;=3.0.2 in /opt/conda/lib/python3.8/site-packages (from requests-&gt;rohub) (4.0.0)
+Requirement already satisfied: idna&lt;3,&gt;=2.5 in /opt/conda/lib/python3.8/site-packages (from requests-&gt;rohub) (2.10)
+Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/conda/lib/python3.8/site-packages (from requests-&gt;rohub) (2021.10.8)
+Requirement already satisfied: urllib3&lt;1.27,&gt;=1.21.1 in /opt/conda/lib/python3.8/site-packages (from requests-&gt;rohub) (1.26.4)
+Building wheels for collected packages: rohub
+  Building wheel for rohub (PEP 517) ... ?25ldone
+?25h  Created wheel for rohub: filename=rohub-1.0.5.post1-py3-none-any.whl size=40269 sha256=c63f80d3a9b1d61026daae694eeaaf1bb179f396e7a5952156fcb9ef99b58345
+  Stored in directory: /home/jovyan/.cache/pip/wheels/7b/f5/d4/cc5c7458e63a15fd516e7da0c424fadce7a50caba66d074d0d
+Successfully built rohub
+Installing collected packages: rohub
+Successfully installed rohub-1.0.5.post1
+Note: you may need to restart the kernel to use updated packages.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">rohub</span>
+<span class="kn">import</span> <span class="nn">os</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rohub_user</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;HOME&#39;</span><span class="p">],</span><span class="s2">&quot;rohub-user&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+<span class="n">rohub_pwd</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="p">[</span><span class="s1">&#39;HOME&#39;</span><span class="p">],</span><span class="s2">&quot;rohub-pwd&quot;</span><span class="p">))</span><span class="o">.</span><span class="n">read</span><span class="p">()</span><span class="o">.</span><span class="n">rstrip</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rohub</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">username</span><span class="o">=</span><span class="n">rohub_user</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">rohub_pwd</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Logged successfully as annefou@geo.uio.no.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="below-make-sure-to-replace-by-your-own-research-object-identifier">
+<h2>Below, make sure to replace by your own Research Object Identifier<a class="headerlink" href="#below-make-sure-to-replace-by-your-own-research-object-identifier" title="Permalink to this headline">¶</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Update the identifier below with your Research Object Identifier.</span>
+<span class="c1"># Check the video to learn about how to get it: </span>
+
+<span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span> <span class="o">=</span> <span class="n">rohub</span><span class="o">.</span><span class="n">ros_load</span><span class="p">(</span><span class="n">identifier</span><span class="o">=</span><span class="nb">id</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Research Object was successfully loaded with id = 4a7315ba-326c-402b-b2c9-f3667357b0bc
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">show_metadata</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;identifier&#39;: &#39;4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;,
+ &#39;shared_link&#39;: &#39;https://w3id.org/ro-id/4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;,
+ &#39;title&#39;: &#39;Title of my Master thesis&#39;,
+ &#39;description&#39;: &#39;Write description of your master thesis. Can be a summary.&#39;,
+ &#39;status&#39;: &#39;LIVE&#39;,
+ &#39;access_mode&#39;: &#39;PUBLIC&#39;,
+ &#39;type&#39;: &#39;Executable Research Object&#39;,
+ &#39;template&#39;: &#39;Executable Research Object folders structure&#39;,
+ &#39;created&#39;: &#39;2022-03-10T07:36:13.134316Z&#39;,
+ &#39;creator&#39;: &#39;annefou@geo.uio.no&#39;,
+ &#39;modificator&#39;: &#39;service-account-enrichment&#39;,
+ &#39;modified&#39;: &#39;2022-03-24T01:11:03.682809Z&#39;,
+ &#39;importer&#39;: None,
+ &#39;research_areas&#39;: [&#39;Applied sciences&#39;],
+ &#39;owner&#39;: &#39;annefou@geo.uio.no&#39;,
+ &#39;editors&#39;: [],
+ &#39;readers&#39;: [],
+ &#39;rating&#39;: &#39;0.00&#39;,
+ &#39;number_of_ratings&#39;: 0,
+ &#39;number_of_likes&#39;: 0,
+ &#39;number_of_dislikes&#39;: 0,
+ &#39;completness&#39;: 60,
+ &#39;size&#39;: 6831,
+ &#39;creation_mode&#39;: &#39;MANUAL&#39;,
+ &#39;doi&#39;: None,
+ &#39;api_link&#39;: &#39;https://api.rohub.org/api/ros/4a7315ba-326c-402b-b2c9-f3667357b0bc/&#39;}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="update-the-research-object">
+<h2>Update the Research Object<a class="headerlink" href="#update-the-research-object" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="add-publisher-to-ro">
+<h3>Add Publisher to RO<a class="headerlink" href="#add-publisher-to-ro" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A publisher is an institution, company or a person that prepares and issues books, journals, videos, research objects, etc.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">organizations</span> <span class="o">=</span> <span class="n">rohub</span><span class="o">.</span><span class="n">organizations_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Oslo&quot;</span><span class="p">)</span>
+<span class="n">organizations</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>organization_id</th>
+      <th>display_name</th>
+      <th>email</th>
+      <th>url</th>
+      <th>ror_identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1d581e9d-25e2-4029-bdeb-6c055a0db8e4</td>
+      <td>https://ror.org/01xtthb56</td>
+      <td>University of Oslo</td>
+      <td>None</td>
+      <td>http://www.uio.no/english/</td>
+      <td>01xtthb56</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>f8b4ad0c-a4b1-4595-81a0-dcf42db083d4</td>
+      <td>http://www.uio.no/english/</td>
+      <td>University of Oslo</td>
+      <td></td>
+      <td>http://www.uio.no/english/</td>
+      <td>01xtthb56</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">uio_org</span> <span class="o">=</span> <span class="s1">&#39;https://ror.org/01xtthb56&#39;</span>
+<span class="n">uio_org</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&#39;https://ror.org/01xtthb56&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_publishers</span> <span class="o">=</span> <span class="p">[</span><span class="n">uio_org</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">set_publishers</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="n">list_publishers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Agent: https://ror.org/01xtthb56 recognized in the system.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;identifier&#39;: &#39;1d581e9d-25e2-4029-bdeb-6c055a0db8e4&#39;,
+  &#39;username&#39;: &#39;https://ror.org/01xtthb56&#39;,
+  &#39;name&#39;: &#39;https://ror.org/01xtthb56&#39;,
+  &#39;type&#39;: &#39;Organization&#39;,
+  &#39;order&#39;: 0,
+  &#39;display_name&#39;: &#39;University of Oslo&#39;}]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-copyright-holders-to-ro">
+<h3>Add Copyright holders to RO<a class="headerlink" href="#add-copyright-holders-to-ro" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>A “copyright holder” is a person or a company who owns any one of the Exclusive Rights of copyright in a work.</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Fouilloux&quot;</span><span class="p">)</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>username</th>
+      <th>display_name</th>
+      <th>affiliation</th>
+      <th>description</th>
+      <th>areas_of_interest</th>
+      <th>orcid_identifier</th>
+      <th>external</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>62277187-0f2e-4320-a6b0-7fe467f1b1c1</td>
+      <td>annefou@geo.uio.no</td>
+      <td>Anne Fouilloux</td>
+      <td>Nordic e-Infrastructure Collaboration (NeIC)</td>
+      <td>Research Software Engineer</td>
+      <td>Weather and Climate Science</td>
+      <td>0000-0002-1784-2920</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>b7064804-420b-43e6-8fdb-dfd5a6b36ca1</td>
+      <td>anne.claire.fouilloux@rohub.com</td>
+      <td>Anne Claire Fouilloux</td>
+      <td>None</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>None</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">list_copyright_holders</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;annefou@geo.uio.no&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">set_copyright_holders</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="n">list_copyright_holders</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Agent: annefou@geo.uio.no recognized in the system.
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;identifier&#39;: &#39;62277187-0f2e-4320-a6b0-7fe467f1b1c1&#39;,
+  &#39;username&#39;: &#39;annefou@geo.uio.no&#39;,
+  &#39;name&#39;: &#39;annefou@geo.uio.no&#39;,
+  &#39;type&#39;: &#39;RohubUser&#39;,
+  &#39;order&#39;: 0,
+  &#39;display_name&#39;: &#39;Anne Fouilloux&#39;,
+  &#39;orcid_identifier&#39;: &#39;0000-0002-1784-2920&#39;,
+  &#39;affiliation&#39;: &#39;Nordic e-Infrastructure Collaboration (NeIC)&#39;}]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-your-supervisors-as-contributors">
+<h3>Add your supervisors as contributors<a class="headerlink" href="#add-your-supervisors-as-contributors" title="Permalink to this headline">¶</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Trude&quot;</span><span class="p">)</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>identifier</th>
+      <th>username</th>
+      <th>display_name</th>
+      <th>affiliation</th>
+      <th>orcid_identifier</th>
+      <th>external</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>409cbecf-dc66-43bc-b7ba-a3f568cf818e</td>
+      <td>trude.storelvmo@geo.uio.no</td>
+      <td>Trude Storelvmo</td>
+      <td>UiO</td>
+      <td>0000-0002-0068-2430</td>
+      <td>True</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">supervisor1</span><span class="o">=</span><span class="s1">&#39;trude.storelvmo@geo.uio.no&#39;</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">usernames</span><span class="o">=</span><span class="n">rohub</span><span class="o">.</span><span class="n">users_find</span><span class="p">(</span><span class="n">search</span><span class="o">=</span><span class="s2">&quot;Benjamin&quot;</span><span class="p">)</span>
+<span class="n">usernames</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">supervisor2</span> <span class="o">=</span> <span class="p">{</span> <span class="s2">&quot;display_name&quot;</span><span class="p">:</span> <span class="s2">&quot;Benjamin Ragan-Kelley&quot;</span><span class="p">,</span> 
+               <span class="s2">&quot;email&quot;</span><span class="p">:</span><span class="s2">&quot;benjaminrk@simula.no&quot;</span><span class="p">,</span>
+               <span class="s2">&quot;affiliation&quot;</span><span class="p">:</span> <span class="s2">&quot;Simula, Department of Numerical Analysis and Scientific Computing (Norway)&quot;</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">set_contributors</span><span class="p">(</span><span class="n">agents</span><span class="o">=</span><span class="p">[</span><span class="n">supervisor1</span><span class="p">,</span> <span class="n">supervisor2</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Agent: trude.storelvmo@geo.uio.no recognized in the system.
+Agent for: {&#39;display_name&#39;: &#39;Benjamin Ragan-Kelley&#39;, &#39;email&#39;: &#39;benjaminrk@simula.no&#39;, &#39;affiliation&#39;: &#39;Simula, Department of Numerical Analysis and Scientific Computing (Norway)&#39;} does not exist in the system, creating a new one based on the input data...
+User successfully created with internal id: 20dc82ee-c726-4512-8e25-b2d5b6db0834!
+</pre></div>
+</div>
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;identifier&#39;: &#39;409cbecf-dc66-43bc-b7ba-a3f568cf818e&#39;,
+  &#39;username&#39;: &#39;trude.storelvmo@geo.uio.no&#39;,
+  &#39;name&#39;: &#39;trude.storelvmo@geo.uio.no&#39;,
+  &#39;type&#39;: &#39;ExternalUser&#39;,
+  &#39;order&#39;: 0,
+  &#39;display_name&#39;: &#39;Trude Storelvmo&#39;,
+  &#39;orcid_identifier&#39;: &#39;0000-0002-0068-2430&#39;,
+  &#39;affiliation&#39;: &#39;UiO&#39;},
+ {&#39;identifier&#39;: &#39;20dc82ee-c726-4512-8e25-b2d5b6db0834&#39;,
+  &#39;username&#39;: &#39;benjaminrk@simula.no&#39;,
+  &#39;name&#39;: &#39;benjaminrk@simula.no&#39;,
+  &#39;type&#39;: &#39;ExternalUser&#39;,
+  &#39;order&#39;: 1,
+  &#39;display_name&#39;: &#39;Benjamin Ragan-Kelley&#39;,
+  &#39;affiliation&#39;: &#39;Simula, Department of Numerical Analysis and Scientific Computing (Norway)&#39;}]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-a-license">
+<h3>Add a license<a class="headerlink" href="#add-a-license" title="Permalink to this headline">¶</a></h3>
+<div class="cell tag_output_scroll docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">rohub</span><span class="o">.</span><span class="n">list_available_licenses</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[&#39;0BSD&#39;,
+ &#39;AAL&#39;,
+ &#39;ADSL&#39;,
+ &#39;AFL-1.1&#39;,
+ &#39;AFL-1.2&#39;,
+ &#39;AFL-2.0&#39;,
+ &#39;AFL-2.1&#39;,
+ &#39;AFL-3.0&#39;,
+ &#39;AGPL-1.0&#39;,
+ &#39;AGPL-1.0-only&#39;,
+ &#39;AGPL-1.0-or-later&#39;,
+ &#39;AGPL-3.0&#39;,
+ &#39;AGPL-3.0-only&#39;,
+ &#39;AGPL-3.0-or-later&#39;,
+ &#39;AMDPLPA&#39;,
+ &#39;AML&#39;,
+ &#39;AMPAS&#39;,
+ &#39;ANTLR-PD&#39;,
+ &#39;ANTLR-PD-fallback&#39;,
+ &#39;APAFML&#39;,
+ &#39;APL-1.0&#39;,
+ &#39;APSL-1.0&#39;,
+ &#39;APSL-1.1&#39;,
+ &#39;APSL-1.2&#39;,
+ &#39;APSL-2.0&#39;,
+ &#39;Abstyles&#39;,
+ &#39;Adobe-2006&#39;,
+ &#39;Adobe-Glyph&#39;,
+ &#39;Afmparse&#39;,
+ &#39;Against-DRM&#39;,
+ &#39;Aladdin&#39;,
+ &#39;Apache-1.0&#39;,
+ &#39;Apache-1.1&#39;,
+ &#39;Apache-2.0&#39;,
+ &#39;Artistic-1.0&#39;,
+ &#39;Artistic-1.0-Perl&#39;,
+ &#39;Artistic-1.0-cl8&#39;,
+ &#39;Artistic-2.0&#39;,
+ &#39;BSD-1-Clause&#39;,
+ &#39;BSD-2-Clause&#39;,
+ &#39;BSD-2-Clause-FreeBSD&#39;,
+ &#39;BSD-2-Clause-NetBSD&#39;,
+ &#39;BSD-2-Clause-Patent&#39;,
+ &#39;BSD-2-Clause-Views&#39;,
+ &#39;BSD-3-Clause&#39;,
+ &#39;BSD-3-Clause-Attribution&#39;,
+ &#39;BSD-3-Clause-Clear&#39;,
+ &#39;BSD-3-Clause-LBNL&#39;,
+ &#39;BSD-3-Clause-Modification&#39;,
+ &#39;BSD-3-Clause-No-Military-License&#39;,
+ &#39;BSD-3-Clause-No-Nuclear-License&#39;,
+ &#39;BSD-3-Clause-No-Nuclear-License-2014&#39;,
+ &#39;BSD-3-Clause-No-Nuclear-Warranty&#39;,
+ &#39;BSD-3-Clause-Open-MPI&#39;,
+ &#39;BSD-4-Clause&#39;,
+ &#39;BSD-4-Clause-Shortened&#39;,
+ &#39;BSD-4-Clause-UC&#39;,
+ &#39;BSD-Protection&#39;,
+ &#39;BSD-Source-Code&#39;,
+ &#39;BSL-1.0&#39;,
+ &#39;BUSL-1.1&#39;,
+ &#39;Bahyph&#39;,
+ &#39;Barr&#39;,
+ &#39;Beerware&#39;,
+ &#39;BitTorrent-1.0&#39;,
+ &#39;BitTorrent-1.1&#39;,
+ &#39;BlueOak-1.0.0&#39;,
+ &#39;Borceux&#39;,
+ &#39;C-UDA-1.0&#39;,
+ &#39;CAL-1.0&#39;,
+ &#39;CAL-1.0-Combined-Work-Exception&#39;,
+ &#39;CATOSL-1.1&#39;,
+ &#39;CC-BY-1.0&#39;,
+ &#39;CC-BY-2.0&#39;,
+ &#39;CC-BY-2.5&#39;,
+ &#39;CC-BY-2.5-AU&#39;,
+ &#39;CC-BY-3.0&#39;,
+ &#39;CC-BY-3.0-AT&#39;,
+ &#39;CC-BY-3.0-DE&#39;,
+ &#39;CC-BY-3.0-NL&#39;,
+ &#39;CC-BY-3.0-US&#39;,
+ &#39;CC-BY-4.0&#39;,
+ &#39;CC-BY-NC-1.0&#39;,
+ &#39;CC-BY-NC-2.0&#39;,
+ &#39;CC-BY-NC-2.5&#39;,
+ &#39;CC-BY-NC-3.0&#39;,
+ &#39;CC-BY-NC-3.0-DE&#39;,
+ &#39;CC-BY-NC-4.0&#39;,
+ &#39;CC-BY-NC-ND-1.0&#39;,
+ &#39;CC-BY-NC-ND-2.0&#39;,
+ &#39;CC-BY-NC-ND-2.5&#39;,
+ &#39;CC-BY-NC-ND-3.0&#39;,
+ &#39;CC-BY-NC-ND-3.0-DE&#39;,
+ &#39;CC-BY-NC-ND-3.0-IGO&#39;,
+ &#39;CC-BY-NC-ND-4.0&#39;,
+ &#39;CC-BY-NC-SA-1.0&#39;,
+ &#39;CC-BY-NC-SA-2.0&#39;,
+ &#39;CC-BY-NC-SA-2.0-FR&#39;,
+ &#39;CC-BY-NC-SA-2.0-UK&#39;,
+ &#39;CC-BY-NC-SA-2.5&#39;,
+ &#39;CC-BY-NC-SA-3.0&#39;,
+ &#39;CC-BY-NC-SA-3.0-DE&#39;,
+ &#39;CC-BY-NC-SA-3.0-IGO&#39;,
+ &#39;CC-BY-NC-SA-4.0&#39;,
+ &#39;CC-BY-ND-1.0&#39;,
+ &#39;CC-BY-ND-2.0&#39;,
+ &#39;CC-BY-ND-2.5&#39;,
+ &#39;CC-BY-ND-3.0&#39;,
+ &#39;CC-BY-ND-3.0-DE&#39;,
+ &#39;CC-BY-ND-4.0&#39;,
+ &#39;CC-BY-SA-1.0&#39;,
+ &#39;CC-BY-SA-2.0&#39;,
+ &#39;CC-BY-SA-2.0-UK&#39;,
+ &#39;CC-BY-SA-2.1-JP&#39;,
+ &#39;CC-BY-SA-2.5&#39;,
+ &#39;CC-BY-SA-3.0&#39;,
+ &#39;CC-BY-SA-3.0-AT&#39;,
+ &#39;CC-BY-SA-3.0-DE&#39;,
+ &#39;CC-BY-SA-4.0&#39;,
+ &#39;CC-PDDC&#39;,
+ &#39;CC0-1.0&#39;,
+ &#39;CDDL-1.0&#39;,
+ &#39;CDDL-1.1&#39;,
+ &#39;CDL-1.0&#39;,
+ &#39;CDLA-Permissive-1.0&#39;,
+ &#39;CDLA-Permissive-2.0&#39;,
+ &#39;CDLA-Sharing-1.0&#39;,
+ &#39;CECILL-1.0&#39;,
+ &#39;CECILL-1.1&#39;,
+ &#39;CECILL-2.0&#39;,
+ &#39;CECILL-2.1&#39;,
+ &#39;CECILL-B&#39;,
+ &#39;CECILL-C&#39;,
+ &#39;CERN-OHL-1.1&#39;,
+ &#39;CERN-OHL-1.2&#39;,
+ &#39;CERN-OHL-P-2.0&#39;,
+ &#39;CERN-OHL-S-2.0&#39;,
+ &#39;CERN-OHL-W-2.0&#39;,
+ &#39;CNRI-Jython&#39;,
+ &#39;CNRI-Python&#39;,
+ &#39;CNRI-Python-GPL-Compatible&#39;,
+ &#39;CPAL-1.0&#39;,
+ &#39;CPL-1.0&#39;,
+ &#39;CPOL-1.02&#39;,
+ &#39;CUA-OPL-1.0&#39;,
+ &#39;Caldera&#39;,
+ &#39;ClArtistic&#39;,
+ &#39;Condor-1.1&#39;,
+ &#39;Crossword&#39;,
+ &#39;CrystalStacker&#39;,
+ &#39;Cube&#39;,
+ &#39;D-FSL-1.0&#39;,
+ &#39;DOC&#39;,
+ &#39;DRL-1.0&#39;,
+ &#39;DSDP&#39;,
+ &#39;DSL&#39;,
+ &#39;Dotseqn&#39;,
+ &#39;ECL-1.0&#39;,
+ &#39;ECL-2.0&#39;,
+ &#39;EFL-1.0&#39;,
+ &#39;EFL-2.0&#39;,
+ &#39;EPICS&#39;,
+ &#39;EPL-1.0&#39;,
+ &#39;EPL-2.0&#39;,
+ &#39;EUDatagrid&#39;,
+ &#39;EUPL-1.0&#39;,
+ &#39;EUPL-1.1&#39;,
+ &#39;EUPL-1.2&#39;,
+ &#39;Entessa&#39;,
+ &#39;ErlPL-1.1&#39;,
+ &#39;Eurosym&#39;,
+ &#39;FAL-1.3&#39;,
+ &#39;FSFAP&#39;,
+ &#39;FSFUL&#39;,
+ &#39;FSFULLR&#39;,
+ &#39;FTL&#39;,
+ &#39;Fair&#39;,
+ &#39;Frameworx-1.0&#39;,
+ &#39;FreeBSD-DOC&#39;,
+ &#39;FreeImage&#39;,
+ &#39;GD&#39;,
+ &#39;GFDL-1.1&#39;,
+ &#39;GFDL-1.1-invariants-only&#39;,
+ &#39;GFDL-1.1-invariants-or-later&#39;,
+ &#39;GFDL-1.1-no-invariants-only&#39;,
+ &#39;GFDL-1.1-no-invariants-or-later&#39;,
+ &#39;GFDL-1.1-only&#39;,
+ &#39;GFDL-1.1-or-later&#39;,
+ &#39;GFDL-1.2&#39;,
+ &#39;GFDL-1.2-invariants-only&#39;,
+ &#39;GFDL-1.2-invariants-or-later&#39;,
+ &#39;GFDL-1.2-no-invariants-only&#39;,
+ &#39;GFDL-1.2-no-invariants-or-later&#39;,
+ &#39;GFDL-1.2-only&#39;,
+ &#39;GFDL-1.2-or-later&#39;,
+ &#39;GFDL-1.3&#39;,
+ &#39;GFDL-1.3-invariants-only&#39;,
+ &#39;GFDL-1.3-invariants-or-later&#39;,
+ &#39;GFDL-1.3-no-cover-texts-no-invariant-sections&#39;,
+ &#39;GFDL-1.3-no-invariants-only&#39;,
+ &#39;GFDL-1.3-no-invariants-or-later&#39;,
+ &#39;GFDL-1.3-only&#39;,
+ &#39;GFDL-1.3-or-later&#39;,
+ &#39;GL2PS&#39;,
+ &#39;GLWTPL&#39;,
+ &#39;GPL-1.0&#39;,
+ &#39;GPL-1.0+&#39;,
+ &#39;GPL-1.0-only&#39;,
+ &#39;GPL-1.0-or-later&#39;,
+ &#39;GPL-2.0&#39;,
+ &#39;GPL-2.0+&#39;,
+ &#39;GPL-2.0-only&#39;,
+ &#39;GPL-2.0-or-later&#39;,
+ &#39;GPL-2.0-with-GCC-exception&#39;,
+ &#39;GPL-2.0-with-autoconf-exception&#39;,
+ &#39;GPL-2.0-with-bison-exception&#39;,
+ &#39;GPL-2.0-with-classpath-exception&#39;,
+ &#39;GPL-2.0-with-font-exception&#39;,
+ &#39;GPL-3.0&#39;,
+ &#39;GPL-3.0+&#39;,
+ &#39;GPL-3.0-only&#39;,
+ &#39;GPL-3.0-or-later&#39;,
+ &#39;GPL-3.0-with-GCC-exception&#39;,
+ &#39;GPL-3.0-with-autoconf-exception&#39;,
+ &#39;Giftware&#39;,
+ &#39;Glide&#39;,
+ &#39;Glulxe&#39;,
+ &#39;HPND&#39;,
+ &#39;HPND-sell-variant&#39;,
+ &#39;HTMLTIDY&#39;,
+ &#39;HaskellReport&#39;,
+ &#39;Hippocratic-2.1&#39;,
+ &#39;IBM-pibs&#39;,
+ &#39;ICU&#39;,
+ &#39;IJG&#39;,
+ &#39;IPA&#39;,
+ &#39;IPL-1.0&#39;,
+ &#39;ISC&#39;,
+ &#39;ImageMagick&#39;,
+ &#39;Imlib2&#39;,
+ &#39;Info-ZIP&#39;,
+ &#39;Intel&#39;,
+ &#39;Intel-ACPI&#39;,
+ &#39;Interbase-1.0&#39;,
+ &#39;JPNIC&#39;,
+ &#39;JSON&#39;,
+ &#39;JasPer-2.0&#39;,
+ &#39;LAL-1.2&#39;,
+ &#39;LAL-1.3&#39;,
+ &#39;LGPL-2.0&#39;,
+ &#39;LGPL-2.0+&#39;,
+ &#39;LGPL-2.0-only&#39;,
+ &#39;LGPL-2.0-or-later&#39;,
+ &#39;LGPL-2.1&#39;,
+ &#39;LGPL-2.1+&#39;,
+ &#39;LGPL-2.1-only&#39;,
+ &#39;LGPL-2.1-or-later&#39;,
+ &#39;LGPL-3.0&#39;,
+ &#39;LGPL-3.0+&#39;,
+ &#39;LGPL-3.0-only&#39;,
+ &#39;LGPL-3.0-or-later&#39;,
+ &#39;LGPLLR&#39;,
+ &#39;LO-FR-2.0&#39;,
+ &#39;LPL-1.0&#39;,
+ &#39;LPL-1.02&#39;,
+ &#39;LPPL-1.0&#39;,
+ &#39;LPPL-1.1&#39;,
+ &#39;LPPL-1.2&#39;,
+ &#39;LPPL-1.3a&#39;,
+ &#39;LPPL-1.3c&#39;,
+ &#39;Latex2e&#39;,
+ &#39;Leptonica&#39;,
+ &#39;LiLiQ-P-1.1&#39;,
+ &#39;LiLiQ-R-1.1&#39;,
+ &#39;LiLiQ-Rplus-1.1&#39;,
+ &#39;Libpng&#39;,
+ &#39;Linux-OpenIB&#39;,
+ &#39;MIT&#39;,
+ &#39;MIT-0&#39;,
+ &#39;MIT-CMU&#39;,
+ &#39;MIT-Modern-Variant&#39;,
+ &#39;MIT-advertising&#39;,
+ &#39;MIT-enna&#39;,
+ &#39;MIT-feh&#39;,
+ &#39;MIT-open-group&#39;,
+ &#39;MITNFA&#39;,
+ &#39;MPL-1.0&#39;,
+ &#39;MPL-1.1&#39;,
+ &#39;MPL-2.0&#39;,
+ &#39;MPL-2.0-no-copyleft-exception&#39;,
+ &#39;MS-PL&#39;,
+ &#39;MS-RL&#39;,
+ &#39;MTLL&#39;,
+ &#39;MakeIndex&#39;,
+ &#39;MirOS&#39;,
+ &#39;Motosoto&#39;,
+ &#39;MulanPSL-1.0&#39;,
+ &#39;MulanPSL-2.0&#39;,
+ &#39;Multics&#39;,
+ &#39;Mup&#39;,
+ &#39;NAIST-2003&#39;,
+ &#39;NASA-1.3&#39;,
+ &#39;NBPL-1.0&#39;,
+ &#39;NCGL-UK-2.0&#39;,
+ &#39;NCSA&#39;,
+ &#39;NGPL&#39;,
+ &#39;NIST-PD&#39;,
+ &#39;NIST-PD-fallback&#39;,
+ &#39;NLOD-1.0&#39;,
+ &#39;NLOD-2.0&#39;,
+ &#39;NLPL&#39;,
+ &#39;NOSL&#39;,
+ &#39;NPL-1.0&#39;,
+ &#39;NPL-1.1&#39;,
+ &#39;NPOSL-3.0&#39;,
+ &#39;NRL&#39;,
+ &#39;NTP&#39;,
+ &#39;NTP-0&#39;,
+ &#39;Naumen&#39;,
+ &#39;Net-SNMP&#39;,
+ &#39;NetCDF&#39;,
+ &#39;Newsletr&#39;,
+ &#39;Nokia&#39;,
+ &#39;Noweb&#39;,
+ &#39;Nunit&#39;,
+ &#39;O-UDA-1.0&#39;,
+ &#39;OCCT-PL&#39;,
+ &#39;OCLC-2.0&#39;,
+ &#39;ODC-By-1.0&#39;,
+ &#39;ODC-PDDL-1.0&#39;,
+ &#39;ODbL-1.0&#39;,
+ &#39;OFL-1.0&#39;,
+ &#39;OFL-1.0-RFN&#39;,
+ &#39;OFL-1.0-no-RFN&#39;,
+ &#39;OFL-1.1&#39;,
+ &#39;OFL-1.1-RFN&#39;,
+ &#39;OFL-1.1-no-RFN&#39;,
+ &#39;OGC-1.0&#39;,
+ &#39;OGDL-Taiwan-1.0&#39;,
+ &#39;OGL-Canada-2.0&#39;,
+ &#39;OGL-UK-1.0&#39;,
+ &#39;OGL-UK-2.0&#39;,
+ &#39;OGL-UK-3.0&#39;,
+ &#39;OGTSL&#39;,
+ &#39;OLDAP-1.1&#39;,
+ &#39;OLDAP-1.2&#39;,
+ &#39;OLDAP-1.3&#39;,
+ &#39;OLDAP-1.4&#39;,
+ &#39;OLDAP-2.0&#39;,
+ &#39;OLDAP-2.0.1&#39;,
+ &#39;OLDAP-2.1&#39;,
+ &#39;OLDAP-2.2&#39;,
+ &#39;OLDAP-2.2.1&#39;,
+ &#39;OLDAP-2.2.2&#39;,
+ &#39;OLDAP-2.3&#39;,
+ &#39;OLDAP-2.4&#39;,
+ &#39;OLDAP-2.5&#39;,
+ &#39;OLDAP-2.6&#39;,
+ &#39;OLDAP-2.7&#39;,
+ &#39;OLDAP-2.8&#39;,
+ &#39;OML&#39;,
+ &#39;OPL-1.0&#39;,
+ &#39;OPUBL-1.0&#39;,
+ &#39;OSET-PL-2.1&#39;,
+ &#39;OSL-1.0&#39;,
+ &#39;OSL-1.1&#39;,
+ &#39;OSL-2.0&#39;,
+ &#39;OSL-2.1&#39;,
+ &#39;OSL-3.0&#39;,
+ &#39;OpenSSL&#39;,
+ &#39;PDDL-1.0&#39;,
+ &#39;PHP-3.0&#39;,
+ &#39;PHP-3.01&#39;,
+ &#39;PSF-2.0&#39;,
+ &#39;Parity-6.0.0&#39;,
+ &#39;Parity-7.0.0&#39;,
+ &#39;Plexus&#39;,
+ &#39;PolyForm-Noncommercial-1.0.0&#39;,
+ &#39;PolyForm-Small-Business-1.0.0&#39;,
+ &#39;PostgreSQL&#39;,
+ &#39;Python-2.0&#39;,
+ &#39;QPL-1.0&#39;,
+ &#39;Qhull&#39;,
+ &#39;RHeCos-1.1&#39;,
+ &#39;RPL-1.1&#39;,
+ &#39;RPL-1.5&#39;,
+ &#39;RPSL-1.0&#39;,
+ &#39;RSA-MD&#39;,
+ &#39;RSCPL&#39;,
+ &#39;Rdisc&#39;,
+ &#39;Ruby&#39;,
+ &#39;SAX-PD&#39;,
+ &#39;SCEA&#39;,
+ &#39;SGI-B-1.0&#39;,
+ &#39;SGI-B-1.1&#39;,
+ &#39;SGI-B-2.0&#39;,
+ &#39;SHL-0.5&#39;,
+ &#39;SHL-0.51&#39;,
+ &#39;SISSL&#39;,
+ &#39;SISSL-1.2&#39;,
+ &#39;SMLNJ&#39;,
+ &#39;SMPPL&#39;,
+ &#39;SNIA&#39;,
+ &#39;SPL-1.0&#39;,
+ &#39;SSH-OpenSSH&#39;,
+ &#39;SSH-short&#39;,
+ &#39;SSPL-1.0&#39;,
+ &#39;SWL&#39;,
+ &#39;Saxpath&#39;,
+ &#39;Sendmail&#39;,
+ &#39;Sendmail-8.23&#39;,
+ &#39;SimPL-2.0&#39;,
+ &#39;Sleepycat&#39;,
+ &#39;Spencer-86&#39;,
+ &#39;Spencer-94&#39;,
+ &#39;Spencer-99&#39;,
+ &#39;StandardML-NJ&#39;,
+ &#39;SugarCRM-1.1.3&#39;,
+ &#39;TAPR-OHL-1.0&#39;,
+ &#39;TCL&#39;,
+ &#39;TCP-wrappers&#39;,
+ &#39;TMate&#39;,
+ &#39;TORQUE-1.1&#39;,
+ &#39;TOSL&#39;,
+ &#39;TU-Berlin-1.0&#39;,
+ &#39;TU-Berlin-2.0&#39;,
+ &#39;UCL-1.0&#39;,
+ &#39;UPL-1.0&#39;,
+ &#39;Unicode-DFS-2015&#39;,
+ &#39;Unicode-DFS-2016&#39;,
+ &#39;Unicode-TOU&#39;,
+ &#39;Unlicense&#39;,
+ &#39;VOSTROM&#39;,
+ &#39;VSL-1.0&#39;,
+ &#39;Vim&#39;,
+ &#39;W3C&#39;,
+ &#39;W3C-19980720&#39;,
+ &#39;W3C-20150513&#39;,
+ &#39;WTFPL&#39;,
+ &#39;Watcom-1.0&#39;,
+ &#39;Wsuipa&#39;,
+ &#39;X11&#39;,
+ &#39;XFree86-1.1&#39;,
+ &#39;XSkat&#39;,
+ &#39;Xerox&#39;,
+ &#39;Xnet&#39;,
+ &#39;YPL-1.0&#39;,
+ &#39;YPL-1.1&#39;,
+ &#39;ZPL-1.1&#39;,
+ &#39;ZPL-2.0&#39;,
+ &#39;ZPL-2.1&#39;,
+ &#39;Zed&#39;,
+ &#39;Zend-2.0&#39;,
+ &#39;Zimbra-1.3&#39;,
+ &#39;Zimbra-1.4&#39;,
+ &#39;Zlib&#39;,
+ &#39;acme-cc&#39;,
+ &#39;acme-cc-by&#39;,
+ &#39;blessing&#39;,
+ &#39;bsd-license&#39;,
+ &#39;bzip2-1.0.5&#39;,
+ &#39;bzip2-1.0.6&#39;,
+ &#39;canada-crown&#39;,
+ &#39;cc-nc&#39;,
+ &#39;copyleft-next-0.3.0&#39;,
+ &#39;copyleft-next-0.3.1&#39;,
+ &#39;curl&#39;,
+ &#39;diffmark&#39;,
+ &#39;dli-model-use&#39;,
+ &#39;dvipdfm&#39;,
+ &#39;eCos-2.0&#39;,
+ &#39;eGenix&#39;,
+ &#39;etalab-2.0&#39;,
+ &#39;eurofound&#39;,
+ &#39;gSOAP-1.3b&#39;,
+ &#39;geo-no-fee-unrestricted&#39;,
+ &#39;geogratis&#39;,
+ &#39;gnuplot&#39;,
+ &#39;hesa-withrights&#39;,
+ &#39;iMatix&#39;,
+ &#39;jabber-osl&#39;,
+ &#39;libpng-2.0&#39;,
+ &#39;libselinux-1.0&#39;,
+ &#39;libtiff&#39;,
+ &#39;localauth-withrights&#39;,
+ &#39;lucent-plan9&#39;,
+ &#39;met-office-cp&#39;,
+ &#39;mitre&#39;,
+ &#39;mpich2&#39;,
+ &#39;my-example-license1&#39;,
+ &#39;notspecified&#39;,
+ &#39;other-at&#39;,
+ &#39;other-closed&#39;,
+ &#39;other-nc&#39;,
+ &#39;other-open&#39;,
+ &#39;other-pd&#39;,
+ &#39;psfrag&#39;,
+ &#39;psutils&#39;,
+ &#39;ukclickusepsi&#39;,
+ &#39;ukcrown&#39;,
+ &#39;ukcrown-withrights&#39;,
+ &#39;ukpsi&#39;,
+ &#39;user-jsim&#39;,
+ &#39;wxWindows&#39;,
+ &#39;xinetd&#39;,
+ &#39;xpp&#39;,
+ &#39;zenodo-freetoread-1.0&#39;,
+ &#39;zlib-acknowledgement&#39;]
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">set_license</span><span class="p">(</span><span class="n">license_id</span><span class="o">=</span><span class="s1">&#39;MIT&#39;</span><span class="p">)</span> 
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;identifier&#39;: &#39;MIT&#39;,
+ &#39;title&#39;: &#39;MIT License&#39;,
+ &#39;description&#39;: &#39;MIT License&#39;,
+ &#39;created&#39;: &#39;2016-09-12T02:51:35.895509+00:00&#39;,
+ &#39;updated&#39;: &#39;2021-10-07T08:21:23.483114+00:00&#39;,
+ &#39;creator&#39;: None,
+ &#39;status&#39;: &#39;active&#39;,
+ &#39;url&#39;: &#39;https://opensource.org/licenses/MIT&#39;,
+ &#39;custom&#39;: False}
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="add-geometry">
+<h2>Add Geometry<a class="headerlink" href="#add-geometry" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>On which geographical region/area is your study?</p></li>
+</ul>
+<div class="section" id="get-geojson-of-your-geographical-area">
+<h3>Get geojson of your geographical area<a class="headerlink" href="#get-geojson-of-your-geographical-area" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>go to <a class="reference external" href="https://geojson.io/">https://geojson.io/</a> and create your geographical area. It does not have to be very precise, the most important is to provide information on the area of interest.</p></li>
+<li><p>save the geographical area as GeoJSON or copy/past the content into a file called <code class="docutils literal notranslate"><span class="pre">map.geojson</span></code> and locate the file and move it in the same folder than this Jupyter notebook.</p></li>
+<li><p>the default name is <code class="docutils literal notranslate"><span class="pre">map.geojson</span></code>. If you rename it, make sure to update the cell below with the right path and filename</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">ro</span><span class="o">.</span><span class="n">add_geolocation</span><span class="p">(</span><span class="n">body_specification_json</span><span class="o">=</span><span class="s1">&#39;map.geojson&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[{&#39;identifier&#39;: &#39;74eed3e4-6e6d-4187-832c-12a763046a63&#39;,
+  &#39;shared_link&#39;: &#39;https://w3id.org/ro-id/4a7315ba-326c-402b-b2c9-f3667357b0bc/annotations/74eed3e4-6e6d-4187-832c-12a763046a63&#39;,
+  &#39;name&#39;: &#39;annotations/74eed3e4-6e6d-4187-832c-12a763046a63&#39;,
+  &#39;filename&#39;: &#39;.ro/annotations/74eed3e4-6e6d-4187-832c-12a763046a63.ttl&#39;,
+  &#39;relation&#39;: False,
+  &#39;read_only&#39;: False,
+  &#39;target&#39;: &#39;4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;,
+  &#39;ro&#39;: &#39;4a7315ba-326c-402b-b2c9-f3667357b0bc&#39;,
+  &#39;resources&#39;: [],
+  &#39;created&#39;: &#39;2022-03-24T16:27:05.432832+0000&#39;,
+  &#39;creator&#39;: &#39;annefou@geo.uio.no&#39;,
+  &#39;modificator&#39;: None,
+  &#39;modified&#39;: &#39;2022-03-24T16:27:05.432762+0000&#39;,
+  &#39;authors_credits&#39;: [&#39;annefou@geo.uio.no&#39;],
+  &#39;contributors_credits&#39;: [],
+  &#39;api_link&#39;: &#39;https://api.rohub.org/api/annotations/74eed3e4-6e6d-4187-832c-12a763046a63/&#39;}]
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Anne Fouilloux<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
