@@ -5,3 +5,4 @@ format: jb-article
 root: RO-Create-FAIR-RO
 sections:
 - file: Login-ROHub
+- file: Adding-administrative-information
